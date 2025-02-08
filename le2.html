@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    li.completed {
+        text-decoration; line-through;
+        color: grey;
+    button.delete{
+        background: red;
+        color :white;
+        color:white;
+        border: none;
+        padding:50px;
+
+    }
+</head>
+<body>
+    <h2>To-Do List-Level 2</h2>
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button onclick="addTask"
+    <script>
+        function addTask() {
+            let taskInput = document.getElementById("taskInput");
+            let taskText = taskInput.val.trim();
+            if (taskText =="" return);
+            let li = document.createElement("li");
+            litextContent
+            let deleteBtn = document.createElement("button");
+            deleteBtn.textContent = "❌";
+            deleteBtn.classList.add("delete");
+            deleteBtn.onclick=function (){
+
+            }
+            this.parentElement.remove();
+        };
+        li.appendChild(deleteBtn);
+        document.getElementById("taskList").appendChild(li);
+        taskInput.value = "";
+    </script>
+</body>
+</html>

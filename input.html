@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Input</title>
+    <style>
+        .task-container {
+            display: flex;
+            gap: 10px;
+        }
+        input {
+            flex: 1;
+            padding: 8px;
+        }
+        button {
+            padding: 8px 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="task-container">
+        <input type="text" id="taskInput" placeholder="Enter a task...">
+        <button onclick="addTask()">Add</button>
+    </div>
+    <script>
+        function addTask() {
+            const input = document.getElementById("taskInput");
+            if (input.value.trim()) {
+                console.log("Task added:", input.value);
+                input.value = "";
+            }
+        }
+    </script>
+</body>
+</html>
